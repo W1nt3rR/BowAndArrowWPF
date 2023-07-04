@@ -108,12 +108,12 @@ namespace BowAndArrowWPF
 
         private void KeyDownHandler(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.S)
+            if (e.Key == Key.S || e.Key == Key.Down)
             {
                 MoveDown = true;
             }
 
-            if (e.Key == Key.W)
+            if (e.Key == Key.W || e.Key == Key.Up)
             {
                 MoveUp = true;
             }
@@ -126,12 +126,12 @@ namespace BowAndArrowWPF
 
         private void KeyUpHandler(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.S)
+            if (e.Key == Key.S || e.Key == Key.Down)
             {
                 MoveDown = false;
             }
 
-            if (e.Key == Key.W)
+            if (e.Key == Key.W || e.Key == Key.Up)
             {
                 MoveUp = false;
             }
